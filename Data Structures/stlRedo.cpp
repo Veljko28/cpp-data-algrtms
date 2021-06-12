@@ -5,7 +5,7 @@
 #include <string>
 #include <set>
 
-int main() {
+int stlRedo() {
 
 	std::vector<int> a = { 81, 6 , 6, 33, 15 , 6 };
 
@@ -48,9 +48,8 @@ int main() {
 		std::cout << i << " ";
 	}
 
-	auto its = s.lower_bound(INT_MIN);
-
-	std::cout << std::endl << *its;
+	// auto its = s.lower_bound(INT_MIN);
+	// std::cout << std::endl << *its;
 
 	return 0;
 }
