@@ -397,7 +397,7 @@ public:
 };
 
 
-int main() {
+int stariCode() {
 	PQueue<int> queue = PQueue<int>(vint{5, 2, 3, 7, 32, 12});
 	queue.add(10);
 	//queue.toString();
