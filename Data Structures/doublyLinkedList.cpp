@@ -1,10 +1,4 @@
-template<typename T>
-struct dblnode
-{
-    T data;
-    dblnode* next;
-    dblnode* prev;
-};
+#include "nodes.h"
 
 template<class T>
 class DoublyLinkedList {
@@ -34,6 +28,7 @@ public:
             tail = tail->next;
         }
         size++;
+        delete temp;
         return;
     }
 
@@ -44,6 +39,7 @@ public:
             temp = temp->next;
         }
         std::cout << temp->data << std::endl;
+        delete temp;
     }
 
     void revToString(){
@@ -53,6 +49,7 @@ public:
             temp = temp->prev;
         }
         std::cout << temp->data << std::endl;
+        delete temp;
     }
 
     int length() {

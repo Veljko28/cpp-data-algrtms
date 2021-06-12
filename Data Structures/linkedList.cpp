@@ -1,8 +1,4 @@
-template<typename T>
-struct node {
-    T data;
-    node* next;
-};
+#include "nodes.h"
 
 template<class T>
 class LinkedList {
@@ -29,6 +25,7 @@ public:
             tail = tail->next;
         }
         size++;
+        delete temp;
         return;
     }
 
@@ -46,6 +43,7 @@ public:
             temp = temp->next;
         }
         std::cout << temp->data << std::endl;
+        delete temp;
     }
 
     int length(){
