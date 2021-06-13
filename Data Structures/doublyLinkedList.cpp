@@ -1,4 +1,5 @@
 #include "nodes.h"
+#include <iostream>
 
 template<class T>
 class DoublyLinkedList {
@@ -6,19 +7,19 @@ public:
     struct dblnode<T> *head, *tail;
 
     DoublyLinkedList() {
-        head = NULL;
-        tail = NULL;
+        head = nullptr;
+        tail = nullptr;
         size = 0;
     }
 
     void add(T data) {
         struct dblnode<T> *temp = new dblnode<T>;
         temp->data = data;
-        temp->next = NULL;
-        temp->prev = NULL;
+        temp->next = nullptr;
+        temp->prev = nullptr;
 
 
-        if (head == NULL){
+        if (head == nullptr){
             head = temp;
             tail = temp;
         }
@@ -34,7 +35,7 @@ public:
 
     void toString() {
         struct dblnode<T> *temp = head;
-        while( temp->next != NULL ){
+        while( temp->next != nullptr){
             std::cout << temp->data << " ";
             temp = temp->next;
         }
@@ -44,7 +45,7 @@ public:
 
     void revToString(){
         struct dblnode<T> *temp = tail;
-        while( temp->prev != NULL ){
+        while( temp->prev != nullptr){
             std::cout << temp->data << " ";
             temp = temp->prev;
         }

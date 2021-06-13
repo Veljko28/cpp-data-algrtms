@@ -1,4 +1,6 @@
 #include "nodes.h"
+#include <vector>
+#include <iostream>
 
 template<class T>
 class LinkedList {
@@ -6,16 +8,16 @@ public:
     struct node<T> *head, *tail;
 
         LinkedList() {
-        head = NULL;
-        tail = NULL;
+        head = nullptr;
+        tail = nullptr;
         size = 0;
     }
 
     void add(T data){ // O(1)
         struct node<T>* temp = new node<T>;
         temp->data = data;
-        temp->next = NULL;
-        if (head == NULL){
+        temp->next = nullptr;
+        if (head == nullptr){
             head = temp;
             tail = temp;
             head->next = tail;
@@ -38,7 +40,7 @@ public:
 
     void toString() { // 
         struct node<T> *temp = head;
-        while( temp->next != NULL ){
+        while( temp->next != nullptr){
             std::cout << temp->data << " ";
             temp = temp->next;
         }
