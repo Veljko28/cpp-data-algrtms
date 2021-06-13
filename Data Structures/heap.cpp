@@ -9,17 +9,17 @@ public:
 
 	heap()
 	{
-		root = NULL;
+		root = nullptr;
 	}
 
 	void add(T data) {
 		struct heapnode<T>* temp = new heapnode<T>;
 		temp->data = data;
-		temp->parent = NULL;
-		temp->left = NULL;
-		temp->right = NULL;
+		temp->parent = nullptr;
+		temp->left = nullptr;
+		temp->right = nullptr;
 
-		if (root == NULL) {
+		if (root == nullptr) {
 			temp->parent = temp;
 			root = temp;
 		}
@@ -31,8 +31,9 @@ public:
 
 	void toString() {
 		struct heapnode<T>* temp = root;
-		while(temp)
+		//while(temp)
 	}
+
 protected: 
 	// returns true if the new value is bigger than the exisiting one 
 	bool compare(T added,T exisiting){
@@ -45,7 +46,7 @@ protected:
 			if (compare(temp->data, curr->data)) curr = curr->right; // goes right if higher value
 			else curr = curr->left; // goes left otherwise
 
-			if (curr == NULL) {
+			if (curr == nullptr) {
 				curr = temp;
 				break;
 			}
