@@ -1,56 +1,99 @@
 #include "nodes.h"
+#include <vector>
+#include <iostream>
+#include <utility>
 
 // MIN HEAP
 
-template <class T>
-struct heap {
-public:	
-	struct heapnode<T>* root;
+//template <class T>
+class minHeap {
+private:
+	int size;
+	int capacity;
+	std::vector<int> heap;
 
-	heap()
+	int parent (int i) { return (i - 1) / 2; };
+	int left(int i) { return (2 * i) + 1; };
+	int right(int i) { return (2 * i) + 2; };
+public: 
+	minHeap(int capacity)
 	{
-		root = nullptr;
+		size = 0;
+		this->capacity = capacity;
+		heap.resize(capacity);
 	}
 
-	void add(T data) {
-		struct heapnode<T>* temp = new heapnode<T>;
-		temp->data = data;
-		temp->parent = nullptr;
-		temp->left = nullptr;
-		temp->right = nullptr;
+	void insert(int data) {
+		if (size == capacity) {
+			std::cout << "MAX CAPACITY REACHED !" << std::endl;
+			return;
+		}
 
-		if (root == nullptr) {
-			temp->parent = temp;
-			root = temp;
+		size++;
+		int i = size - 1;
+
+		heap[i] = data;
+
+		// Switching up the min heap shape
+		while (i != 0 && heap[parent(i)] > heap[i])
+		{
+			std::swap(heap[i], heap[parent(i)]);
+			i = parent(i);
+		}
+	}
+
+	// Keep the structure of the heap
+	void heapify(int i) {
+		int r = right(i);
+		int l = left(i);
+		int sm = i;
+
+		// Check for the smallest in the heap
+		if ((size > l) && (heap[l] < heap[sm])) {
+			sm = l;
+		}
+
+		if ((size > r) && (heap[r] < heap[sm])) {
+			sm = r;
+		}
+
+		if (sm != i) {
+			std::swap(heap[i], heap[sm]);
+			heapify(sm); // heapify until min heap
+		}
+	}
+
+	int extractMin(int i) {
+		if (size == 0) {
+			std::cout << "NO ELEMENT IN HEAP" << std::endl;
+			return -1;
+		}
+		else if (size == 1) {
+			size--;
+			heap.clear(); // removes the only element from array
+			return heap[0];
 		}
 		else {
-			addToHeap(temp);
+			int root = heap[0];
+
+			heap[0] = heap[size - 1];
+			size--;
+			heapify(0); // reshape after deleting the element
+			return root;
 		}
-		delete temp;
 	}
 
-	void toString() {
-		struct heapnode<T>* temp = root;
-		//while(temp)
-	}
-
-protected: 
-	// returns true if the new value is bigger than the exisiting one 
-	bool compare(T added,T exisiting){
-		return added > exisiting;
-	}
-
-	void addToHeap(heapnode<T>* temp) {
-		struct heapnode<T>* curr = root;
-		while (true) {
-			if (compare(temp->data, curr->data)) curr = curr->right; // goes right if higher value
-			else curr = curr->left; // goes left otherwise
-
-			if (curr == nullptr) {
-				curr = temp;
-				break;
+	void printHeap() {
+		int power = 0;
+		int value = 1;
+		for (int i = 0; i < size; i++) {
+			if (i == value) {
+				std::cout << std::endl;
+				power++;
+				value += (1 << power);
 			}
+			std::cout << heap[i] << " ";
 		}
-		delete curr;
+		std::cout << std::endl;
 	}
 };
