@@ -18,9 +18,9 @@ struct node {
 template<typename T>
 struct queueNode {
     T data;
-    heapnode* parent;
-    heapnode* left;
-    heapnode* right;
+    queueNode* parent;
+    queueNode* left;
+    queueNode* right;
 };
 
 template<typename T>
