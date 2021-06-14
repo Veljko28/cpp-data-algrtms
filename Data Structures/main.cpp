@@ -6,11 +6,11 @@
 //#include "stlRedo.cpp"
 // #include "linkedList.cpp"
 // #include "doublyLinkedList.cpp"
-#include "QueueWithArray.cpp"
+#include "QueueWithPointers.cpp"
 
 
 int main() {
-	Queue q;
+	QueueP q;
 	q.enqueue(5);
 	q.enqueue(1);
 	q.enqueue(2);
