@@ -4,17 +4,17 @@
 #include <stdlib.h>
 #include <iostream>
 //#include "stlRedo.cpp"
-#include "linkedList.cpp"
-#include "doublyLinkedList.cpp"
-
-// stlRedo();
-	/*DoublyLinkedList<int> lst;
-	lst.add(1); lst.add(3); lst.add(5);
-	lst.revToString();
-	std::cout << lst.length();*/
+// #include "linkedList.cpp"
+// #include "doublyLinkedList.cpp"
+#include "QueueWithArray.cpp"
 
 
 int main() {
-	
+	Queue q;
+	q.enqueue(5);
+	q.enqueue(1);
+	q.enqueue(2);
+	q.dequeue();
+	q.print();
 	return 0;
 }
