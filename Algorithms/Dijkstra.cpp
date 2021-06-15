@@ -18,7 +18,10 @@ private:
 	list<pair<int, int>> *adj; // Adjacent list ( Lista susednih elemenata )
 
 public:
-	Graph(int v);
+	Graph(int v) {
+		this->V = v;
+		this->adj = new list<pair<int, int>>[v];
+	}
 
 	void addEdge(int v1, int v2, int weight) {
 		adj[v1].push_back(make_pair(v2, weight));
@@ -65,7 +68,6 @@ public:
 
 
 // Constructor with init verticies
-Graph::Graph(int v) {
-	this->V = v;
-	this->adj = new list<pair<int, int>>[v];
-}
+//Graph::Graph(int v) {
+//
+//}
