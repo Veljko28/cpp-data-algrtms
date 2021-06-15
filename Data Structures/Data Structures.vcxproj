@@ -19,7 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="chef.h" />
+    <ClCompile Include="doublyLinkedList.cpp" />
+    <ClCompile Include="heap.cpp" />
+    <ClCompile Include="linkedList.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="QueueWithArray.cpp" />
+    <ClCompile Include="QueueWithPointers.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="stlRedo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nodes.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
