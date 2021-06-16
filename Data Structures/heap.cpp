@@ -5,7 +5,7 @@
 
 // MIN HEAP
 
-//template <class T>
+//template <class T> 
 class minHeap {
 private:
 	int size;

@@ -55,7 +55,7 @@ public:
 					distances[v] = distances[u] + weight;
 					extract_set.insert(make_pair(distances[v], v));
 				}
-
+				 
 			}
 		}
 
