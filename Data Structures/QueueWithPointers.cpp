@@ -1,33 +1,36 @@
 #include <iostream>
 
-class QueueP {
-private:
-    int* queue;
-    int size;
+namespace {
+    class QueueP {
+    private:
+        int* queue;
+        int size;
 
-    void addFront(int value) {
-        for (int i = 1; i<size;i++){
-            queue[i] = queue[i-1];
-        }
-        queue[0] = value;
-    }
-
-public: 
-    QueueP() {
-        size = 0;
-        queue = nullptr;
-    }; 
-    void enqueue(int value) {
-        if (queue == nullptr){
-            queue = (int*)malloc(sizeof(int));
+        void addFront(int value) {
+            for (int i = 1; i<size;i++){
+                queue[i] = queue[i-1];
+            }
             queue[0] = value;
-            size++;
         }
-        else {
-            queue = (int*)realloc(queue, ++size);
-            addFront(value);
+
+    public: 
+        QueueP() {
+            size = 0;
+            queue = nullptr;
+        }; 
+        void enqueue(int value) {
+            if (queue == nullptr){
+                queue = (int*)malloc(sizeof(int));
+                queue[0] = value;
+                size++;
+            }
+            else {
+                queue = (int*)realloc(queue, ++size);
+                addFront(value);
+            }
         }
-    }
+}
+
     int dequeue(){
         int temp = queue[size - 1];
         queue = (int*)realloc(queue, --size);

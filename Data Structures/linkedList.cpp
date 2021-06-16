@@ -2,57 +2,61 @@
 #include <vector>
 #include <iostream>
 
-template<class T>
-class LinkedList {
-public: 
-    struct node<T> *head, *tail;
 
-        LinkedList() {
-        head = nullptr;
-        tail = nullptr;
-        size = 0;
-    }
+namespace {
 
-    void add(T data){ // O(1)
-        struct node<T>* temp = new node<T>;
-        temp->data = data;
-        temp->next = nullptr;
-        if (head == nullptr){
-            head = temp;
-            tail = temp;
-            head->next = tail;
+    template<class T>
+    class LinkedList {
+    public: 
+        struct node<T> *head, *tail;
+
+            LinkedList() {
+            head = nullptr;
+            tail = nullptr;
+            size = 0;
         }
-        else {
-            tail->next = temp;
-            tail = tail->next;
+
+        void add(T data){ // O(1)
+            struct node<T>* temp = new node<T>;
+            temp->data = data;
+            temp->next = nullptr;
+            if (head == nullptr){
+                head = temp;
+                tail = temp;
+                head->next = tail;
+            }
+            else {
+                tail->next = temp;
+                tail = tail->next;
+            }
+            size++;
+            delete temp;
+            return;
         }
-        size++;
-        delete temp;
-        return;
-    }
 
-    void addRange(std::vector<T> vec){ // O(n) n == vec.size()
-        for (T item : vec){
-            add(item);
+        void addRange(std::vector<T> vec){ // O(n) n == vec.size()
+            for (T item : vec){
+                add(item);
+            }
+            return;
         }
-        return;
-    }
 
-    void toString() { // 
-        struct node<T> *temp = head;
-        while( temp->next != nullptr){
-            std::cout << temp->data << " ";
-            temp = temp->next;
+        void toString() { // 
+            struct node<T> *temp = head;
+            while( temp->next != nullptr){
+                std::cout << temp->data << " ";
+                temp = temp->next;
+            }
+            std::cout << temp->data << std::endl;
+            delete temp;
         }
-        std::cout << temp->data << std::endl;
-        delete temp;
-    }
 
-    int length(){
-        return size;
-    }
+        int length(){
+            return size;
+        }
 
-protected:    
-    int size;
+    protected:    
+        int size;
         
-};
+    };
+}
