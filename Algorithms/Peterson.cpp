@@ -3,6 +3,8 @@
 #include <iostream>
 #include <thread>
 
+#include <emmintrin.h> // library for memory fence
+
 namespace {
 	class Peterson {
 	private:
@@ -13,6 +15,10 @@ namespace {
 			interested[tid] = 1;
 			int other = 1 - tid;
 			turn = other;
+
+			// insure that all previous writes have been set visible
+			// after that the other thread can read the values set by this thread
+			_mm_mfence();
 
 			// Wait while the other thread finishes
 			while (turn == other && interested[other]);
