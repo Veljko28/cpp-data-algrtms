@@ -143,6 +143,7 @@
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="Dijkstra.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Peterson.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
