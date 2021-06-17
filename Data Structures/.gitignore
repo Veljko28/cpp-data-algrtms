@@ -1,2 +1,4 @@
 *.vcxproj
 a.out
+./vscode
+settings.json
