@@ -17,6 +17,17 @@ namespace {
 		int parent (int i) { return (i - 1) / 2; };
 		int left(int i) { return (2 * i) + 1; };
 		int right(int i) { return (2 * i) + 2; };
+
+		void headSort() {
+			// heap builder
+			for (int i = (size / 2)-1;i>=0;i--){
+				heapify(i);
+			}
+			for (int i = size-1;i>0;i--){
+				std::swap(heap[0], heap[i]);
+				heapify(i);
+			}
+		}
 	public: 
 		minHeap(int capacity)
 		{
