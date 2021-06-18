@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bfs.cpp" />
     <ClCompile Include="BinarySearch.cpp" />
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="Dijkstra.cpp" />
@@ -147,6 +148,7 @@
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="Peterson.cpp" />
     <ClCompile Include="QuickSort.cpp" />
+    <ClCompile Include="RecursiveInsertionSort.cpp" />
     <ClCompile Include="SelectionSort.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

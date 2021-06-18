@@ -45,5 +45,11 @@
     <ClCompile Include="MergeSort.cpp">
       <Filter>Source Files\Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="RecursiveInsertionSort.cpp">
+      <Filter>Source Files\Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Bfs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
