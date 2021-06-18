@@ -93,9 +93,9 @@ namespace {
 
 	void test() {
 		std::vector<int> v = { 4, 2, 5, 1, 6, 3 };
-		printVector(v);
+		//printVector(v);
 
 		MergeSort(v);
-		printVector(v);
+		//printVector(v);
 	}
 }

@@ -37,10 +37,10 @@ namespace {
 
     void test() {
         std::vector<int> v {3 ,1, 2, 5, 4, 7, 6};
-        printVector(v);
+        //printVector(v);
 
         RecursiveInsertionSort(v,v.size());
 
-        printVector(v);
+        //printVector(v);
     }
 }

@@ -53,8 +53,8 @@ namespace {
 	// testing the quick sort
 	void test() {
 		std::vector<int> v = { 6 ,7, 2, 4, 1, 3, 5 };
-		printVector(v); // Before sorting
+		//printVector(v); // Before sorting
 		QuickSort(v, 0, v.size()-1);
-		printVector(v); // After sorting
+		//printVector(v); // After sorting
 	}
 }
