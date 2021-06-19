@@ -4,7 +4,7 @@
 #include <utility>
 #include <vector>
 
-#define INF 1000000
+#define INF 10000000
 
 using namespace std; // for better readability
 
@@ -61,14 +61,14 @@ namespace {
 				}
 			}
 
-			cout << "Minimum distace from vertex" << s << " is: " << endl;
+			cout << "Minimum distace from vertex " <<  s  << " is: " << endl;
 			for (int i = 0; i < V; i++) {
 				cout << "Vertex: " << i << "\tDistance: " << distances[i] << endl;
 			}
 		}
 	};
 
-	void djikstra_test() {
+	void dijkstra_test() {
 		Graph q(9);
 
 		// NODE 0

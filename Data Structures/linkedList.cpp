@@ -30,7 +30,6 @@ namespace {
                 tail = tail->next;
             }
             size++;
-            delete temp;
             return;
         }
 
@@ -49,6 +48,18 @@ namespace {
             }
             std::cout << temp->data << std::endl;
             delete temp;
+        }
+
+        void reverse() {
+            struct node<T>* current = head, * prev = NULL, *next = head;
+            while (current != NULL)
+            {
+                next = current->next;
+                current->next = prev;
+                prev = current;
+                current = next;
+            }
+            return;
         }
 
         int length(){

@@ -56,7 +56,7 @@ namespace {
         printVec(r);
         std::cout << std::endl;
 
-        // using std::unique insted of sets
+        // using std::unique insted of sets 
         std::vector<int> un {1,1,1,3,4,5,5,5,6,3,4,7};
         un.erase(std::unique(un.begin(),un.end()),un.end());
         printVec(un);   
