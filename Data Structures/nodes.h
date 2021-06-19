@@ -23,18 +23,18 @@ struct queueNode {
     queueNode* right;
 };
 
-template<typename T>
-struct queueNode {
-    T data;
-    queueNode* left;
-    queueNode* right;
-};
-
-template<typename T>
-struct queueNode* createNode(T data) {
-    queueNode* node = new queueNode<T>();
-    node->data = data;
-    node->parent = NULL;
-    node->left = NULL;
-    return node;
-}
+//template<typename T>
+//struct queueNode {
+//    T data;
+//    queueNode* left;
+//    queueNode* right;
+//};
+//
+//template<typename T>
+//struct queueNode* createNode(T data) {
+//    queueNode* node = new queueNode<T>();
+//    node->data = data;
+//    node->parent = NULL;
+//    node->left = NULL;
+//    return node;
+//}

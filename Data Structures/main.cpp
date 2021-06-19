@@ -4,17 +4,14 @@
 #include <stdlib.h>
 #include <iostream>
 //#include "stlRedo.cpp"
-// #include "linkedList.cpp"
+ #include "linkedList.cpp"
 // #include "doublyLinkedList.cpp"
-#include "QueueWithPointers.cpp"
+//#include "QueueWithPointers.cpp"
 
 
 int main() {
-	QueueP q;
-	q.enqueue(5);
-	q.enqueue(1);
-	q.enqueue(2);
-	q.dequeue();
-	q.print();
+	LinkedList<int> a;
+	a.addRange({ 3 ,4, 5, 1, 2, 3 });
+	a.toString();
 	return 0;
 }
