@@ -62,6 +62,17 @@ namespace {
             return;
         }
 
+        void recursive_reverse(struct node<T>* p){
+            if (p->next == NULL){
+                head = p;
+                return;
+            }
+            recursive_reverse(p->next);
+            struct node<T> *q = p->next;
+            q->next = p;
+            p->next = NULL;
+        }
+
         int length(){
             return size;
         }

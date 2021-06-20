@@ -3,10 +3,21 @@
 #include <string>
 #include <stdlib.h>
 #include <iostream>
-//#include "stlRedo.cpp"
+ #include "nodes.h"
  #include "linkedList.cpp"
 // #include "doublyLinkedList.cpp"
 //#include "QueueWithPointers.cpp"
+
+// template<typename T>
+// void reverse_list(node<T> *head){
+//  node<T> *current = head, *next = head, *prev = NULL;
+//  while (current != NULL){
+// 	 next = current->next;
+// 	 current->next = prev;
+// 	 prev = current;
+// 	 current = next;
+//  } 
+// }
 
 
 int main() {
