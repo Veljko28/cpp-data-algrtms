@@ -151,6 +151,8 @@
     <ClCompile Include="QuickSort.cpp" />
     <ClCompile Include="RecursiveInsertionSort.cpp" />
     <ClCompile Include="SelectionSort.cpp" />
+    <ClCompile Include="STLBuiltIn.cpp" />
+    <ClCompile Include="sumPairQuestion.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="helper.h" />

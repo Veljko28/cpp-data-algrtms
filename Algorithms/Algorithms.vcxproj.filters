@@ -54,6 +54,12 @@
     <ClCompile Include="Dfs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="STLBuiltIn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sumPairQuestion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="helper.h">
