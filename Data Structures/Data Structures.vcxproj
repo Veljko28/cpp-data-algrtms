@@ -24,6 +24,7 @@
     <ClCompile Include="heap.cpp" />
     <ClCompile Include="linkedList.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="maxHeap.cpp" />
     <ClCompile Include="QueueWithArray.cpp" />
     <ClCompile Include="QueueWithPointers.cpp" />
     <ClCompile Include="Source.cpp" />
