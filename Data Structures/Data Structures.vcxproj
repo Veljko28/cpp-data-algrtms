@@ -21,7 +21,7 @@
   <ItemGroup>
     <ClCompile Include="chef.h" />
     <ClCompile Include="doublyLinkedList.cpp" />
-    <ClCompile Include="heap.cpp" />
+    <ClCompile Include="minHeap.cpp" />
     <ClCompile Include="linkedList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="maxHeap.cpp" />
