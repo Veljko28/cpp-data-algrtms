@@ -90,6 +90,17 @@ public:
 		}
 		head = prev;
 	}
+
+
+	T operator [](int i) {
+		struct node<T>* temp = head;
+		int j = 0;
+		while (j != i) {
+			temp = temp->next;
+			j++;
+		}
+		return temp->data;
+	}
 };
 
 
@@ -173,6 +184,16 @@ public:
 		}
 	}
 
+	T operator [](int i) {
+		struct dblnode<T>* temp = head;
+		int j = 0;
+		while (j != i) {
+			temp = temp->next;
+			j++;
+		}
+		return temp->data;
+	}
+
 };
 
 int main() {
@@ -187,6 +208,6 @@ int main() {
 	v.reverse();
 	v.toString();
 	v.revToString();
-
+	std::cout << v[0];
 	return 0;
 }

@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AVLTree.cpp" />
     <ClCompile Include="chef.h" />
     <ClCompile Include="doublyLinkedList.cpp" />
     <ClCompile Include="minHeap.cpp" />
