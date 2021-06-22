@@ -116,6 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,7 +145,10 @@
     <ClCompile Include="BubbleSort.cpp" />
     <ClCompile Include="Dfs.cpp" />
     <ClCompile Include="Dijkstra.cpp" />
+    <ClCompile Include="GCD.cpp" />
     <ClCompile Include="InsertionSort.cpp" />
+    <ClCompile Include="IsPrime.cpp" />
+    <ClCompile Include="LCM.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MergeSort.cpp" />
     <ClCompile Include="Peterson.cpp" />

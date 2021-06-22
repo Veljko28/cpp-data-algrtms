@@ -16,6 +16,9 @@
     <Filter Include="Source Files\Sorting">
       <UniqueIdentifier>{75d4709f-62c7-4766-9a04-1e12c9728af9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{c5d4542c-335d-4f20-9528-880de3dbbcb2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -59,6 +62,15 @@
     </ClCompile>
     <ClCompile Include="sumPairQuestion.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GCD.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="LCM.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="IsPrime.cpp">
+      <Filter>Source Files\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
