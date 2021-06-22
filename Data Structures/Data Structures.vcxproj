@@ -22,6 +22,7 @@
     <ClCompile Include="AVLTree.cpp" />
     <ClCompile Include="chef.h" />
     <ClCompile Include="doublyLinkedList.cpp" />
+    <ClCompile Include="FenwickTree.cpp" />
     <ClCompile Include="minHeap.cpp" />
     <ClCompile Include="linkedList.cpp" />
     <ClCompile Include="main.cpp" />
