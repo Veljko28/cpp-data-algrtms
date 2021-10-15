@@ -28,4 +28,5 @@ void ShiftingStack() {
 			}
 		}
 		if (flag) cout << "YES" << endl;
+	}
 }
