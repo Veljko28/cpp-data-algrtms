@@ -6,8 +6,14 @@
 #include <string>
 #include <cstring>
 #include <set>
+#include <sstream>
+#include <iomanip>
+#include <map>
+#include <stack>
 using namespace std;
 #define ll long long
+#define sync ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0)
+constexpr auto N = 200000;
 
 template<typename... T>
 void read(T& ...args) {
@@ -17,10 +23,10 @@ void read(T& ...args) {
 
 int main()
 {
-	ios_base::sync_with_stdio(false);
-	cin.tie(0);
-	cout.tie(0);
+	sync;
+	
 }
+
 
 
 
