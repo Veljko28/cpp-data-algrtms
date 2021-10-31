@@ -23,6 +23,8 @@ using namespace std;
 #define si set<int>
 #define sc set<char>
 #define pb push_back
+#define For(n) for(int i=0;i<n;i++)
+#define Forr(n) for (int i=n;i>=0;i--)
 
 template<typename... T>
 void read(T& ...args) {
@@ -32,8 +34,8 @@ void read(T& ...args) {
 int main()
 {
 	sync;
-
 }
+
 
 
 
