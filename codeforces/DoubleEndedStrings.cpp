@@ -18,19 +18,19 @@ constexpr auto N = 1000;
 
 template<typename... T>
 void read(T& ...args) {
-	((cin >> args), ...);
+    ((cin >> args), ...);
 }
 
 int subStrLen1(string X, string Y, int m, int n)
 {
     int LCSuff[21][21];
-    int result = 0; 
- 
+    int result = 0;
+
     for (int i = 0; i <= m; i++)
     {
         for (int j = 0; j <= n; j++)
         {
-           
+
             if (i == 0 || j == 0)
                 LCSuff[i][j] = 0;
 
@@ -47,7 +47,7 @@ int subStrLen1(string X, string Y, int m, int n)
 
 void DoubleEndedStrings()
 {
-	sync;
+    sync;
     int t;
     cin >> t;
     while (t--) {
@@ -57,8 +57,3 @@ void DoubleEndedStrings()
         cout << (a.length() - r) + (b.length() - r) << '\n';
     }
 }
-
-
-
-
-
