@@ -11,20 +11,20 @@ using namespace std;
 
 void DzyLikesStrings()
 {
-    sync;   
+    sync;
     string s;
     cin >> s;
     int k, m = 0, ans = 0;
     cin >> k;
     int a[26];
-    for (int i=0;i<26;i++){
+    for (int i = 0; i < 26; i++) {
         cin >> a[i];
-        m = max(m,a[i]);
+        m = max(m, a[i]);
     }
     int i;
-    for (i=0;i<s.length();i++){
-        ans += a[s[i] - 97] * (i+1);
+    for (i = 0; i < s.length(); i++) {
+        ans += a[s[i] - 97] * (i + 1);
     }
-    for (int j = 0;j<k;j++) ans += m * (++i); 
+    for (int j = 0; j < k; j++) ans += m * (++i);
     cout << ans << '\n';
 }
