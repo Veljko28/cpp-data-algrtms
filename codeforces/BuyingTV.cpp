@@ -19,22 +19,18 @@ constexpr auto N = 1000;
 
 template<typename... T>
 void read(T& ...args) {
-	((cin >> args), ...);
+    ((cin >> args), ...);
 }
 
 
 void BuyingTV()
 {
-	sync;
-    ull a,b,x,y;
-    read(a,b,x,y);
-    ull g = __gcd(x,y);
+    sync;
+    ull a, b, x, y;
+    read(a, b, x, y);
+    ull g = gcd(x, y);
     x /= g;
     y /= g;
-    cout << min(a/x,b/y);
+    cout << min(a / x, b / y);
 }
-
-
-
-
 

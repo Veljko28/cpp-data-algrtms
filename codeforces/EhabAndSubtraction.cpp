@@ -19,25 +19,25 @@ constexpr auto N = 1000;
 
 template<typename... T>
 void read(T& ...args) {
-	((cin >> args), ...);
+    ((cin >> args), ...);
 }
 
 
 void EhabAndSubtraction()
 {
-	sync;
+    sync;
     int n, k;
-    read(n,k);
+    read(n, k);
     set<int> s;
     s.insert(0);
-    for (int i =0;i<n;i++){
+    for (int i = 0; i < n; i++) {
         int a;
         cin >> a;
         s.insert(a);
     }
     auto it = s.begin();
-    for (int i =0;i<k;i++){
-        if (next(it) == s.end()){
+    for (int i = 0; i < k; i++) {
+        if (next(it) == s.end()) {
             cout << 0 << '\n';
         }
         else {
@@ -46,8 +46,3 @@ void EhabAndSubtraction()
         }
     }
 }
-
-
-
-
-

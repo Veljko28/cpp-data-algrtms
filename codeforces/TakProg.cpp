@@ -26,11 +26,13 @@ using namespace std;
 #define For(n) for(int i=0;i<n;i++)
 #define Forr(n) for (int i=n;i>=0;i--)
 #define vifor(v) for (int& i : v) cin >> i;
+const int maxn = 1e5 + 5;
 
 template<typename... T>
 void read(T& ...args) {
 	((cin >> args), ...);
 }
+
 
 
 int main()

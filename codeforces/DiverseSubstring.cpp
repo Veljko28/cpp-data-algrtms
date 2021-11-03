@@ -43,7 +43,7 @@ void DiverseSubstring()
 	for (int i = 1; i < n; i++) {
 		if (s[i - 1] != s[i]) {
 			cout << "YES\n" << s[i - 1] << s[i] << '\n';
-			return 0;
+			return;
 		}
 	}
 	no;
