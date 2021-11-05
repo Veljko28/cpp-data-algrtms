@@ -16,6 +16,8 @@ using namespace std;
 #define ll long long
 #define ull unsigned long long
 #define sync ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0)
+#define PI 3.14159265358979323846 
+
 #define pf   printf
 #define yes  pf("YES\n")
 #define no   pf("NO\n")
@@ -40,11 +42,3 @@ int main()
 	sync;
 	
 }
-
-
-
-
-
-
-
-
