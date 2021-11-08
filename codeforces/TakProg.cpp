@@ -19,6 +19,7 @@
 #define pf   printf
 #define yes  pf("YES\n")
 #define no   pf("NO\n")
+#define minus pf("-1\n");
 #define vi vector<int>
 #define si set<int>
 #define sc set<char>
