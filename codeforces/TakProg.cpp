@@ -20,6 +20,7 @@
 #define yes  pf("YES\n")
 #define no   pf("NO\n")
 #define minus pf("-1\n");
+#define imp pf("Impossible\n");
 #define vi vector<int>
 #define si set<int>
 #define sc set<char>
@@ -27,13 +28,22 @@
 #define For(n) for(int i=0;i<n;i++)
 #define Forr(n) for (int i=n;i>=0;i--)
 #define vifor(v) for (int& i : v) cin >> i;
+#define all(c) (c).begin(), (c).end()
+#define sz(x) (int)(x).size()
 using namespace std;
+
+template<typename T>
+void prv(vector<T> a) {
+	for (int i = 0; i < a.size(); i++) {
+		if (i + 1 == a.size()) cout << a[i] << '\n';
+		else cout << a[i] << ' ';
+	}
+}
 
 template<typename... T>
 void read(T& ...args) {
 	((cin >> args), ...);
 }
-
 
 int main() {
 	sync;
