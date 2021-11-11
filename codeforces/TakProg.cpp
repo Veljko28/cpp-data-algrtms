@@ -22,14 +22,17 @@
 #define minus pf("-1\n");
 #define imp pf("Impossible\n");
 #define vi vector<int>
+#define vll vector<ll>
 #define si set<int>
 #define sc set<char>
 #define pb push_back
 #define For(n) for(int i=0;i<n;i++)
 #define Forr(n) for (int i=n;i>=0;i--)
 #define vifor(v) for (int& i : v) cin >> i;
+#define vllfor(v) for (ll& i : v) cin >> i;
 #define all(c) (c).begin(), (c).end()
 #define sz(x) (int)(x).size()
+#define outn(a) cout << a << '\n'
 using namespace std;
 
 template<typename T>
