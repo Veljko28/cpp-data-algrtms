@@ -25,6 +25,7 @@
 #define vll vector<ll>
 #define si set<int>
 #define sc set<char>
+#define pii pair<int,int>
 #define pb push_back
 #define For(n) for(int i=0;i<n;i++)
 #define Forr(n) for (int i=n;i>=0;i--)
