@@ -35,6 +35,7 @@
 #define all(c) (c).begin(), (c).end()
 #define sz(x) (int)(x).size()
 #define outn(a) cout << a << '\n'
+#define cnt(a,b) count(all(a), b)
 using namespace std;
 
 template<typename T>
