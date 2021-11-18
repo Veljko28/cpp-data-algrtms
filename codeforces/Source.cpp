@@ -31,7 +31,9 @@
 #define For(n) for(int i=0;i<n;i++)
 #define Forr(n) for (int i=n;i>=0;i--)
 #define vifor(v) for (int& i : v) cin >> i;
+#define vifors(v,s) for (int& i : v) { cin >> i; s+= i;}
 #define vllfor(v) for (ll& i : v) cin >> i;
+#define vllfors(v,s) for (ll& i : v) { cin >> i; s+= i;}
 #define all(c) (c).begin(), (c).end()
 #define sz(x) (int)(x).size()
 #define outn(a) cout << a << '\n'
