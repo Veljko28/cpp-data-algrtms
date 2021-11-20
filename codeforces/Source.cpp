@@ -31,13 +31,12 @@
 #define For(n) for(int i=0;i<n;i++)
 #define Forr(n) for (int i=n;i>=0;i--)
 #define vifor(v) for (int& i : v) cin >> i;
-#define vifors(v,s) for (int& i : v) { cin >> i; s+= i;}
 #define vllfor(v) for (ll& i : v) cin >> i;
-#define vllfors(v,s) for (ll& i : v) { cin >> i; s+= i;}
 #define all(c) (c).begin(), (c).end()
 #define sz(x) (int)(x).size()
 #define outn(a) cout << a << '\n'
-#define cnt(a,b) count(all(a), b)
+#define fi first
+#define se second
 using namespace std;
 
 template<typename T>
@@ -56,6 +55,7 @@ void prv(vector<T> a) {
 
 int main() {
 	sync;
-	
+
 }
+
 
