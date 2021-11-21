@@ -29,7 +29,7 @@
 #define pci pair<char,int>
 #define pb push_back
 #define For(n) for(int i=0;i<n;i++)
-#define Forr(n) for (int i=n;i>=0;i--)
+#define Forr(n) for (int i=n-1;i>=0;i--)
 #define vifor(v) for (int& i : v) cin >> i;
 #define vllfor(v) for (ll& i : v) cin >> i;
 #define all(c) (c).begin(), (c).end()
@@ -52,10 +52,13 @@ void prv(vector<T> a) {
 //	((cin >> args), ...);
 //}
 
+int gcd(int a, int b) {
+	return b == 0 ? a : gcd(b, a % b);
+}
 
 int main() {
 	sync;
-
+	
 }
 
 
