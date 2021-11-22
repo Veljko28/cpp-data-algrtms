@@ -47,6 +47,13 @@ void prv(vector<T> a) {
 	}
 }
 
+template<typename T, typename N>
+void prvp(vector<pair<T, N>> a) {
+	for (int i = 0; i < a.size(); i++) {
+		cout << a[i].first  << " " << a[i].second  << '\n';
+	}
+}
+
 //template<typename... T>
 //void read(T& ...args) {
 //	((cin >> args), ...);
