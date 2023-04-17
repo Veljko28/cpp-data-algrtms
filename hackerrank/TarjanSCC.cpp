@@ -49,11 +49,12 @@ void dfs(int i) {
     }
 
     if (ids[i] == low[i]) {
-        int node = st.top();
-        while (node != i) {
+        while (st.size()) {
+            int node = st.top();
             onSt[node] = 0;
             low[node] = ids[i];
             st.pop();
+            if (node == i) break;
         }
         sccCount++;
     }
