@@ -74,6 +74,7 @@ void solve() {
             int j;
             cin >> j;
             adj[i].push_back(j);
+            adj[j].push_back(i);
         }
     }
     onSt = vector<bool>(n);
