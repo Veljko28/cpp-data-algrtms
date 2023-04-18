@@ -53,6 +53,7 @@ void solve() {
         for (int j = 0,edge, cost; j < k; j++) {
             cin >> edge >> cost;
             adj[i].push_back({edge,cost});
+            adj[edge].push_back({i,cost});
         }
     }
     int st;
