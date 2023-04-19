@@ -41,6 +41,7 @@ void solve() {
         for (int j = 0, l; j < k; j++) {
             cin >> l;
             adj[i].push_back(l);
+            adj[l].push_back(i);
         }
     }
     vector<int> leaves;
